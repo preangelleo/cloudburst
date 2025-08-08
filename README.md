@@ -4,6 +4,14 @@ My second open source project! 🚀
 
 [中文版](./README_CN.md)
 
+> ⚠️ **Important Update**: We now recommend using **[CloudBurst Fargate](https://github.com/preangelleo/cloudburst-fargate)** for new deployments. CloudBurst Fargate offers:
+> - 🚀 Serverless architecture (no servers to manage)
+> - 💰 Pay-per-second billing (more cost-efficient)
+> - ⚡ Auto-scaling capabilities
+> - 🔧 Zero maintenance overhead
+>
+> This EC2-based version is maintained for users who need specific instance control or have existing EC2 workflows.
+
 ## What is this?
 
 A Python framework that **automatically manages AWS EC2 instances** for on-demand video generation tasks. 
@@ -703,6 +711,20 @@ Based on actual production testing with AWS EC2 c5.2xlarge instances:
 - **Savings**: 96% cost reduction!
 
 **Real "Plug and Play" Experience**: From zero to 55 videos in under 10 minutes for just $0.72!
+
+## 🆚 CloudBurst vs CloudBurst Fargate
+
+| Feature | CloudBurst (EC2) | CloudBurst Fargate |
+|---------|------------------|-------------------|
+| **Architecture** | Instance-based | Serverless |
+| **Server Management** | Manual (start/stop) | Automatic |
+| **Billing** | Per minute | Per second |
+| **Scaling** | Manual | Auto-scaling |
+| **Startup Time** | 1-2 minutes | 30-60 seconds |
+| **Maintenance** | Required | Zero |
+| **Best For** | - Specific instance needs<br>- Existing EC2 workflows<br>- Custom configurations | - Most use cases<br>- Production workloads<br>- Cost optimization |
+
+**👉 We recommend [CloudBurst Fargate](https://github.com/preangelleo/cloudburst-fargate) for new deployments.**
 
 ## 📄 License
 

@@ -4,6 +4,14 @@
 
 [English Version](./README.md)
 
+> ⚠️ **重要更新**：我们现在推荐新部署使用 **[CloudBurst Fargate](https://github.com/preangelleo/cloudburst-fargate)**。CloudBurst Fargate 提供：
+> - 🚀 无服务器架构（无需管理服务器）
+> - 💰 按秒计费（更加经济高效）
+> - ⚡ 自动伸缩能力
+> - 🔧 零维护开销
+>
+> 这个基于 EC2 的版本为需要特定实例控制或有现有 EC2 工作流的用户保留。
+
 ## 这是什么？
 
 一个 **自动管理 AWS EC2 实例** 的 Python 框架，专门用于按需视频生成任务。
@@ -560,6 +568,20 @@ self.instance_configs = [
 - **节省**：96% 成本降低！
 
 **真正的"即插即用"体验**：从零到 55 个视频，仅需不到 10 分钟，只花 $0.72！
+
+## 🆚 CloudBurst vs CloudBurst Fargate
+
+| 特性 | CloudBurst (EC2) | CloudBurst Fargate |
+|------|------------------|-------------------|
+| **架构** | 基于实例 | 无服务器 |
+| **服务器管理** | 手动（启动/停止） | 自动 |
+| **计费方式** | 按分钟 | 按秒 |
+| **伸缩性** | 手动 | 自动伸缩 |
+| **启动时间** | 1-2 分钟 | 30-60 秒 |
+| **维护** | 需要 | 零维护 |
+| **适用于** | - 特定实例需求<br>- 现有 EC2 工作流<br>- 自定义配置 | - 大多数使用场景<br>- 生产工作负载<br>- 成本优化 |
+
+**👉 我们推荐新部署使用 [CloudBurst Fargate](https://github.com/preangelleo/cloudburst-fargate)。**
 
 ## 📄 许可证
 
